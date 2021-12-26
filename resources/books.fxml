@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="551.0" prefWidth="698.0" style="-fx-background-color: black;" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo19.MainController">
+  <tabs>
+    <Tab style="-fx-background-color: pink;" text="HOME">
+      <content>
+        <AnchorPane id="tabe" minHeight="0.0" minWidth="0.0" prefHeight="522.0" prefWidth="714.0" style="-fx-background-color: black;" stylesheets="@books.css">
+               <children>
+                  <VBox layoutX="14.0" layoutY="69.0" prefHeight="204.0" prefWidth="100.0" spacing="15.0">
+                     <children>
+                        <Label text="ID" textFill="#d7dd0e">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Title" textFill="#d7dd0e">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label lineSpacing="15.0" text="Author" textFill="#d7dd0e">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label lineSpacing="15.0" text="Genre" textFill="#d7dd0e">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label lineSpacing="15.0" text="Pages" textFill="#d7dd0e">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox layoutX="81.0" layoutY="60.0" prefHeight="177.0" prefWidth="221.0" spacing="15.0">
+                     <children>
+                        <TextField fx:id="tfId" prefHeight="25.0" prefWidth="203.0" stylesheets="@books.css" />
+                        <TextField fx:id="tfTitle" />
+                        <TextField fx:id="tfAuthor" />
+                        <TextField fx:id="tfGenre" />
+                        <TextField fx:id="tfPages" />
+                     </children>
+                  </VBox>
+                  <TableView fx:id="tvBooks" layoutX="307.0" layoutY="60.0" prefHeight="257.0" prefWidth="378.0">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="colTitle" prefWidth="75.0" text="Title" />
+                        <TableColumn fx:id="colAuthor" prefWidth="75.0" text="Author" />
+                        <TableColumn fx:id="colGenre" prefWidth="75.0" text="Genre" />
+                        <TableColumn fx:id="colPages" prefWidth="75.0" text="Pages" />
+                    </columns>
+                     <effect>
+                        <Glow level="0.0" />
+                     </effect>
+                  </TableView>
+                  <Button fx:id="btnInsert" layoutX="70.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="77.0" text="Insert" textFill="#141214" />
+                  <Button fx:id="btnDelete" layoutX="172.0" layoutY="286.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="75.0" text="Delete" />
+                  <TextField alignment="CENTER" layoutX="236.0" layoutY="14.0" prefHeight="33.0" prefWidth="227.0" text="BOOK BEATER">
+                     <font>
+                        <Font name="System Bold Italic" size="17.0" />
+                     </font></TextField>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab style="-fx-background-color: pink;" text="FAMOUS BOOKS">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c62aaf; -fx-border-color: black;">
+               <children>
+                  <ImageView fitHeight="215.0" fitWidth="270.0" layoutX="377.0" layoutY="261.0">
+                     <image>
+                        <Image url="@images/cover4.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="216.0" fitWidth="244.0" layoutX="24.0" layoutY="32.0">
+                     <image>
+                        <Image url="@images/cover2.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="269.0" layoutX="377.0" layoutY="40.0">
+                     <image>
+                        <Image url="@images/cover3.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="198.0" fitWidth="247.0" layoutX="27.0" layoutY="273.0">
+                     <image>
+                        <Image url="@images/cover1.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab style="-fx-background-color: pink;" text="FAMOUS AUTHORS">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #c62aaf;">
+               <children>
+                  <ImageView fitHeight="200.0" fitWidth="146.0" layoutX="41.0" layoutY="14.0">
+                     <image>
+                        <Image url="@images/JK.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="185.0" layoutX="241.0" layoutY="14.0">
+                     <image>
+                        <Image url="@images/khalid.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="186.0" layoutX="460.0" layoutY="15.0">
+                     <image>
+                        <Image url="@images/Ac.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="172.0" layoutX="32.0" layoutY="261.0">
+                     <image>
+                        <Image url="@images/Elif.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="168.0" layoutX="250.0" layoutY="261.0">
+                     <image>
+                        <Image url="@images/Yuval.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="200.0" fitWidth="147.0" layoutX="480.0" layoutY="261.0">
+                     <image>
+                        <Image url="@images/BL.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="64.0" layoutY="229.0" prefHeight="17.0" prefWidth="102.0" text="JK Rowling" textFill="#252525">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="306.0" layoutY="229.0" text="Khalid Hoseeini" textFill="#1b1919">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="526.0" layoutY="229.0" />
+                  <Label alignment="CENTER" layoutX="93.0" layoutY="470.0" prefHeight="20.0" prefWidth="80.0" text="Elif Shafak" textFill="#110f0f">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="306.0" layoutY="479.0" prefHeight="17.0" prefWidth="48.0" text="Yuval" textFill="#030303">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="539.0" layoutY="471.0" text="Gay Talese" textFill="#0a0a0a">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="526.0" layoutY="229.0" prefHeight="17.0" prefWidth="74.0" text="Thomas" textFill="#0a0a0a">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font></Label>
+
+               </children></AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
