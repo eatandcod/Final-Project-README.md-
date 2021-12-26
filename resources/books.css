@@ -1,0 +1,36 @@
+.button{
+    -fx-background-color: #cfdb2a;
+    -fx-border-color: derive(#2fd179, -30%);
+    -fx-border-width: 0.5px;
+    -fx-font-size: 10pt;
+    -fx-font-family: "Lato bold"
+}
+
+.button:hover{
+    -fx-background-color: derive(#2fd179, -20%);
+    -fx-font-size: 10pt;
+}
+.button:hover{
+    -fx-text-fill: black;
+}
+.text-field{
+    -fx-background-color: #e781b4;
+}
+.table-view {
+    -fx-background-color: #e781b4;
+
+}
+
+
+.table-view .column-header {
+    -fx-background-color: #cfdb2a;
+}
+#AnchorPane{
+
+    -fx-background-repeat: stretch;
+    -fx-background-size: 900 506;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+    -fx-background-color: lightpurple;
+
+}
