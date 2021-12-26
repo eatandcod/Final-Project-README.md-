@@ -2,7 +2,8 @@ BOOK BEATER
 Description:
 This app is created in Java programming language. For the GUI we have used Scene Builder and JavaFX library. Moreover, it uses Mariadb to save the order list in the database. 
 
-Software Requirements:
+Software Requirements: 
+
 JavaFX SDK 11.0.2 - https://openjfx.io/
 Scene Builder 11.0.0 - https://gluonhq.com/products/scene-builder/
 IntelliJ IDEA - https://www.jetbrains.com/idea/
