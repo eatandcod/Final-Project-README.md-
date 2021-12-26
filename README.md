@@ -23,10 +23,14 @@ This app helps the user to save the history of the books that he has studied.
 
 Installation 
 
-First we should have a IDE that will work like Intellij Idea along with XAMMP (APPACHE and SQL).
-Run Apache and SQL with XAMMP and create Database Name="books", username="root" and no password.
-Connect IDE with Database Name="test", username="root" and password= ""
-Add MariaDB Connector file to libraries path.
+First we should have a IDE that will work like Intellij Idea along with XAMMP (APPACHE and SQL). 
+
+Run Apache and SQL with XAMMP and create Database Name="books", username="root" and no password. 
+
+Connect IDE with Database Name="test", username="root" and password= "" 
+
+Add MariaDB Connector file to libraries path. 
+
 Run the file. It will work if you have setup JavaFX correctly in your IDE
 
 
